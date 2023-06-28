@@ -1,3 +1,6 @@
 [submodule "PX4-Autopilot"]
 	path = PX4-Autopilot
 	url = git@github.com:ArjunBadyal/PX4-Autopilot.git
+[submodule "T3_ROS2_WS"]
+	path = T3_ROS2_WS
+	url = git@github.com:ArjunBadyal/T3_ROS2_WS.git
