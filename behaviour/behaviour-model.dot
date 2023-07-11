@@ -1,0 +1,129 @@
+/*
+digraph Experiments {
+    newrank="true";
+    graph [ compound="true" fontname="Ubuntu Condensed,sans-serif"];
+    node [ shape="rectangle" style="filled" fontname="Ubuntu Condensed,sans-serif" ];
+    edge [ penwidth="1" color="grey" fontname="Ubuntu Condensed,sans-serif" ];
+    labeljust="r";
+    subgraph cluster_problem_corpus {
+        label = "Problem Corpus";
+        sr_smt_probs [label="Models and instances\nfrom SR (SMT paper)"];
+        probs [style="invis" shape="point"];
+        extra_probs [label="Extra instances\nand models"];
+    }
+    probs -> batch [ltail="cluster_problem_corpus"];
+    subgraph cluster_viking {
+          label="Viking HPC Cluster";
+        batch [style="invis" shape="point" rank="1"];
+        batch -> infofiles [label="SR: 5 runs x\n5 sum encs x\n5 pb encs"];
+        infofiles [label="*.info produced by SR" rank="2"];
+        batch -> fzn [label="SR -flatzinc"];
+        fzn [label="*.fzn" rank="2"];
+        featcsv [label="*.f2f.csv" rank="3"];
+        fzn -> featcsv [label="fzn2feat"];
+    }
+    infofiles -> gatherinfos;
+    featcsv -> gatherinfos;
+    subgraph cluster_process {
+        label = "Process";
+        gatherinfos [label="gatherinfos2csv.py" shape="diamond" rank="1"];
+        gatherinfos -> infos_csv;
+        gatherinfos -> feats_csv;
+        infos_csv [label="infos.csv" rank="2"];
+        feats_csv [label="feats.csv" rank="2"];
+        infos_csv -> prep;
+        feats_csv -> prep;
+        prep [label="prep_data.py" shape="diamond" rank="3"];
+    }
+    prep -> datasets;
+    subgraph cluster_ml {
+        label="ML + Analysis";
+        datasets [label="dataset-med.csv\ndataset-best.csv\ndataset-all.csv\ndataset-sam.csv"];
+        datasets -> learn;
+        classifiers [label="sklearn\nclassifiers\nrf,et,kn,ada_b,..." style="dashed"];
+        classifiers -> learn [style="dashed"];
+        learn [label="learn.py" shape="diamond"];
+        learn -> preds [label="train and test"];
+        preds [label="predictions_*.csv"];
+        preds -> plot;
+        infos_csv -> plot;
+        
+        plot [label="plot_pred_cactus.py" shape="diamond"];
+        
+        
+    }
+
+    {
+        rank="same"
+        probs;
+        batch;
+        gatherinfos;
+        datasets;
+        }
+}
+*/
+
+
+
+digraph Behaviour {
+    newrank="true";
+    nodesep=1;
+    graph [ compound="true" fontname="Ubuntu Condensed,sans-serif"];
+    node [ shape="rectangle" style="filled" fontname="Ubuntu Condensed,sans-serif" ];
+    edge [ penwidth="1" color="grey" fontname="Ubuntu Condensed,sans-serif" ];
+    labeljust="c";
+
+    subgraph in_contact {
+        label = "In Contact with Human RC";
+        cluster=true;
+        style="dashed";
+
+        rc_by_hum [label="Remotely controlled\nby human"];
+    }
+
+    rc_by_hum -> conn_act [label="check"];
+    conn_act [label="Connection Active?" shape="oval"];
+    conn_act -> stab [label="no"];
+    conn_act -> rc_by_hum [label="yes"];
+
+    subgraph autonomous {
+        label = "Autonomous operation";
+        cluster=true;
+        style="dashed";
+
+        stab [label="Stabilise"];
+        pla_exists [label="Does an escape plan exist?" shape="oval"];
+        stab -> pla_exists [label="check"];
+        escape [label="Escaping"];
+        pla_exists -> escape [label="yes"];
+        pla_exists -> stab [label="no"];
+        on_track [label="On track?\nSensors ok?" shape="oval"];
+        escape -> on_track [label="check"];
+        on_track -> escape [label="yes"];
+        on_track -> stab [label="no"];
+        stab -> backhome [label="check"];
+        escape -> backhome [label="check"];
+        backhome [label="Back home?" shape="oval"];
+        backhome -> pla_exists;
+    }
+
+
+        backhome -> land [label="yes"];
+    
+    subgraph the_end {
+        label="Bailing out or landing";
+        cluster=true;
+        style="dashed";
+
+        land [label="Attempt safe landing"];
+    }
+
+    
+    {
+        rank = "same";
+        rc_by_hum;
+        stab;
+        land;
+    }
+
+}
