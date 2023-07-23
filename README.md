@@ -49,14 +49,14 @@ colcon build
 Terminal 1: (from /PX4-Autopilot) make px4_sitl gazebo-classic_iris__mine
 Terminal 2: MicroXRCEAgent udp4 -p 8888
 Terminal 3: (from /T3_ROS2_WS) ros2 run keyboard_teleop keyboard_teleop_incremental 
-Terminal 4: (from /T3_ROS2_WS) ros2 run  px4_ros_com control
+Terminal 4: (from /T3_ROS2_WS) ros2 run  px4_ros_com teleop
 ```
 
 
 ## For control:
  ```sh
 Publish twist messages to "cmd_vel"
-ros2 run  px4_ros_com teleop
+ros2 run  px4_ros_com control
 ```
 
 
