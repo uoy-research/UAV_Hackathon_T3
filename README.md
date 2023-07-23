@@ -56,7 +56,7 @@ Terminal 4: (from /T3_ROS2_WS) ros2 run  px4_ros_com control
 ## For control:
  ```sh
 Publish twist messages to "cmd_vel"
-ros2 run  px4_ros_com control 
+ros2 run  px4_ros_com teleop
 ```
 
 
