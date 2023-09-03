@@ -1,0 +1,13 @@
+12:53:59 [DEBUG] (6) ReverseCmd: - Waiting for input on channel start_ctrl_ref0
+12:53:59 [DEBUG] (7) ReverseCmd: - Waiting for input on channel start_stm_ref0
+12:53:59 [DEBUG] (5) ReverseCmd: - Waiting for input on channel start_ReverseCmd
+12:54:24 [DEBUG] (5) ReverseCmd: - Read input on channel start_ReverseCmd
+12:54:24 [DEBUG] (5) ReverseCmd: - Waiting for input on channel start_ReverseCmd
+12:54:24 [DEBUG] (6) ReverseCmd: - Read input on channel start_ctrl_ref0
+12:54:24 [DEBUG] (6) ReverseCmd: - Waiting for input on channel start_ctrl_ref0
+12:54:24 [DEBUG] (7) ReverseCmd: - Read input on channel start_stm_ref0
+12:54:34 [DEBUG] (5) ReverseCmd: - Read input on channel start_ReverseCmd
+12:54:34 [DEBUG] (5) ReverseCmd: - Waiting for input on channel start_ReverseCmd
+12:54:34 [DEBUG] (6) ReverseCmd: - Read input on channel start_ctrl_ref0
+12:54:34 [DEBUG] (6) ReverseCmd: - Waiting for input on channel start_ctrl_ref0
+12:54:34 [DEBUG] (7) ReverseCmd: - Read input on channel start_stm_ref0

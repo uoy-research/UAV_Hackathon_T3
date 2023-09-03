@@ -1,0 +1,683 @@
+13:58:11 [DEBUG] (4) CacheCons2: - Waiting for input on channel start_CacheConsMod
+13:58:11 [DEBUG] (5) CacheCons2: - Waiting for input on channel start_S
+13:58:11 [DEBUG] (6) CacheCons2: - Waiting for input on channel start_C
+13:58:11 [DEBUG] (4) CacheCons2: - Read input on channel start_CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished reading inputs of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Started step of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished step of module CacheConsMod
+13:58:11 [DEBUG] (6) CacheCons2: - Read input on channel start_C
+13:58:11 [DEBUG] (6) CacheCons2: 	Finished reading inputs of controller C
+13:58:11 [DEBUG] (5) CacheCons2: - Read input on channel start_S
+13:58:11 [DEBUG] (6) CacheCons2: 	Started step of controller C
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing initial junction of SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state SimCacheCons_PU_Scan.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state SimCacheCons_PU_Scan.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing initial junction of PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing initial junction of Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Turn.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Turn.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Turn.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Sent output _done_ on channel end_S
+13:58:11 [DEBUG] (6) CacheCons2: - Waiting for input on channel start_C
+13:58:11 [DEBUG] (4) CacheCons2: - Waiting for input on channel start_CacheConsMod
+13:58:11 [DEBUG] (5) CacheCons2: - Waiting for input on channel start_S
+13:58:11 [DEBUG] (4) CacheCons2: - Read input on channel start_CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished reading inputs of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Started step of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished step of module CacheConsMod
+13:58:11 [DEBUG] (6) CacheCons2: - Read input on channel start_C
+13:58:11 [DEBUG] (6) CacheCons2: 	Finished reading inputs of controller C
+13:58:11 [DEBUG] (6) CacheCons2: 	Started step of controller C
+13:58:11 [DEBUG] (5) CacheCons2: - Read input on channel start_S
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Turn.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Turn.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Turn.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Sent output _done_ on channel end_S
+13:58:11 [DEBUG] (6) CacheCons2: - Waiting for input on channel start_C
+13:58:11 [DEBUG] (4) CacheCons2: - Waiting for input on channel start_CacheConsMod
+13:58:11 [DEBUG] (5) CacheCons2: - Waiting for input on channel start_S
+13:58:11 [DEBUG] (4) CacheCons2: - Read input on channel start_CacheConsMod
+13:58:11 [DEBUG] (6) CacheCons2: - Read input on channel start_C
+13:58:11 [DEBUG] (6) CacheCons2: 	Finished reading inputs of controller C
+13:58:11 [DEBUG] (6) CacheCons2: 	Started step of controller C
+13:58:11 [DEBUG] (4) CacheCons2: Finished reading inputs of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Started step of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished step of module CacheConsMod
+13:58:11 [DEBUG] (5) CacheCons2: - Read input on channel start_S
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running transition action of transition SimCacheCons_PU_Scan_Wander_t1.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running transition action of transition SimCacheCons_PU_Scan_Wander_t1.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running transition action of transition SimCacheCons_PU_Scan_Wander_t1.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Move_Forward.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Move_Forward.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Move_Forward.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Sent output _done_ on channel end_S
+13:58:11 [DEBUG] (6) CacheCons2: - Waiting for input on channel start_C
+13:58:11 [DEBUG] (4) CacheCons2: - Waiting for input on channel start_CacheConsMod
+13:58:11 [DEBUG] (5) CacheCons2: - Waiting for input on channel start_S
+13:58:11 [DEBUG] (4) CacheCons2: - Read input on channel start_CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished reading inputs of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Started step of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished step of module CacheConsMod
+13:58:11 [DEBUG] (6) CacheCons2: - Read input on channel start_C
+13:58:11 [DEBUG] (6) CacheCons2: 	Finished reading inputs of controller C
+13:58:11 [DEBUG] (6) CacheCons2: 	Started step of controller C
+13:58:11 [DEBUG] (5) CacheCons2: - Read input on channel start_S
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Move_Forward.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Move_Forward.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Move_Forward.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Sent output _done_ on channel end_S
+13:58:11 [DEBUG] (6) CacheCons2: - Waiting for input on channel start_C
+13:58:11 [DEBUG] (4) CacheCons2: - Waiting for input on channel start_CacheConsMod
+13:58:11 [DEBUG] (5) CacheCons2: - Waiting for input on channel start_S
+13:58:11 [DEBUG] (4) CacheCons2: - Read input on channel start_CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished reading inputs of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Started step of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished step of module CacheConsMod
+13:58:11 [DEBUG] (6) CacheCons2: - Read input on channel start_C
+13:58:11 [DEBUG] (6) CacheCons2: 	Finished reading inputs of controller C
+13:58:11 [DEBUG] (6) CacheCons2: 	Started step of controller C
+13:58:11 [DEBUG] (5) CacheCons2: - Read input on channel start_S
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Move_Forward.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Move_Forward.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Move_Forward.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Sent output _done_ on channel end_S
+13:58:11 [DEBUG] (6) CacheCons2: - Waiting for input on channel start_C
+13:58:11 [DEBUG] (4) CacheCons2: - Waiting for input on channel start_CacheConsMod
+13:58:11 [DEBUG] (5) CacheCons2: - Waiting for input on channel start_S
+13:58:11 [DEBUG] (4) CacheCons2: - Read input on channel start_CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: - Waiting for input on channel start_CacheConsMod
+13:58:11 [DEBUG] (6) CacheCons2: - Read input on channel start_C
+13:58:11 [DEBUG] (4) CacheCons2: - Read input on channel start_CacheConsMod
+13:58:11 [DEBUG] (6) CacheCons2: - Waiting for input on channel start_C
+13:58:11 [DEBUG] (6) CacheCons2: - Read input on channel start_C
+13:58:11 [DEBUG] (5) CacheCons2: - Read input on channel start_S
+13:58:11 [DEBUG] (4) CacheCons2: Finished reading inputs of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Started step of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished step of module CacheConsMod
+13:58:11 [DEBUG] (5) CacheCons2: - Read input on channel start_S
+13:58:11 [DEBUG] (6) CacheCons2: 	Finished reading inputs of controller C
+13:58:11 [DEBUG] (6) CacheCons2: 	Started step of controller C
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Move_Forward.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Move_Forward.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Move_Forward.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Move_Forward
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Wander
+13:58:11 [DEBUG] (5) CacheCons2: Running transition action of transition SimCacheCons_PU_Scan_t1.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Wander
+13:58:11 [DEBUG] (5) CacheCons2: Running transition action of transition SimCacheCons_PU_Scan_t1.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state CalculateProb
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state PU_Scan_CalculateProb.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state CalculateProb
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state PU_Scan_CalculateProb.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state CalculateProb
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state PU_Scan_CalculateProb.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state CalculateProb
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state CalculateProb
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state CalculateProb
+13:58:11 [DEBUG] (5) CacheCons2: 		Sent output _done_ on channel end_S
+13:58:11 [DEBUG] (4) CacheCons2: - Waiting for input on channel start_CacheConsMod
+13:58:11 [DEBUG] (6) CacheCons2: - Waiting for input on channel start_C
+13:58:11 [DEBUG] (5) CacheCons2: - Waiting for input on channel start_S
+13:58:11 [DEBUG] (4) CacheCons2: - Read input on channel start_CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished reading inputs of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Started step of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished step of module CacheConsMod
+13:58:11 [DEBUG] (6) CacheCons2: - Read input on channel start_C
+13:58:11 [DEBUG] (6) CacheCons2: 	Finished reading inputs of controller C
+13:58:11 [DEBUG] (6) CacheCons2: 	Started step of controller C
+13:58:11 [DEBUG] (5) CacheCons2: - Read input on channel start_S
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state CalculateProb
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state CalculateProb
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing initial junction of Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Turn.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Turn.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Turn.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Sent output _done_ on channel end_S
+13:58:11 [DEBUG] (6) CacheCons2: - Waiting for input on channel start_C
+13:58:11 [DEBUG] (4) CacheCons2: - Waiting for input on channel start_CacheConsMod
+13:58:11 [DEBUG] (5) CacheCons2: - Waiting for input on channel start_S
+13:58:11 [DEBUG] (4) CacheCons2: - Read input on channel start_CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: - Waiting for input on channel start_CacheConsMod
+13:58:11 [DEBUG] (6) CacheCons2: - Read input on channel start_C
+13:58:11 [DEBUG] (4) CacheCons2: - Read input on channel start_CacheConsMod
+13:58:11 [DEBUG] (6) CacheCons2: - Waiting for input on channel start_C
+13:58:11 [DEBUG] (5) CacheCons2: - Read input on channel start_S
+13:58:11 [DEBUG] (6) CacheCons2: - Read input on channel start_C
+13:58:11 [DEBUG] (4) CacheCons2: Finished reading inputs of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Started step of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished step of module CacheConsMod
+13:58:11 [DEBUG] (6) CacheCons2: 	Finished reading inputs of controller C
+13:58:11 [DEBUG] (6) CacheCons2: 	Started step of controller C
+13:58:11 [DEBUG] (5) CacheCons2: - Read input on channel start_S
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Turn.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Turn.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state Wander_Turn.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Sent output _done_ on channel end_S
+13:58:11 [DEBUG] (6) CacheCons2: - Waiting for input on channel start_C
+13:58:11 [DEBUG] (4) CacheCons2: - Waiting for input on channel start_CacheConsMod
+13:58:11 [DEBUG] (5) CacheCons2: - Waiting for input on channel start_S
+13:58:11 [DEBUG] (4) CacheCons2: - Read input on channel start_CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished reading inputs of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Started step of module CacheConsMod
+13:58:11 [DEBUG] (4) CacheCons2: Finished step of module CacheConsMod
+13:58:11 [DEBUG] (6) CacheCons2: - Read input on channel start_C
+13:58:11 [DEBUG] (6) CacheCons2: 	Finished reading inputs of controller C
+13:58:11 [DEBUG] (6) CacheCons2: 	Started step of controller C
+13:58:11 [DEBUG] (5) CacheCons2: - Read input on channel start_S
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Turn
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state Wander
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting children of state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: Running transition action of transition SimCacheCons_t1.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: Running transition action of transition SimCacheCons_t1.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Exiting state PU_Scan
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Look_For_Target
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state SimCacheCons_Look_For_Target.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Look_For_Target
+13:58:11 [DEBUG] (5) CacheCons2: Running entry action 1 of state SimCacheCons_Look_For_Target.
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Look_For_Target
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Look_For_Target
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Look_For_Target
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing initial junction of Look_For_Target
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Look_For_Target
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Look_For_Target
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering state Watch
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Look_For_Target
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Look_For_Target
+13:58:11 [DEBUG] (5) CacheCons2: 		Entering children of state Watch
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine SimCacheCons
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Look_For_Target
+13:58:11 [DEBUG] (5) CacheCons2: 		Running step of state machine Look_For_Target
+13:58:11 [DEBUG] (5) CacheCons2: 		Executing state Watch
+13:58:11 [DEBUG] (5) CacheCons2: 		Sent output _done_ on channel end_S
+13:58:11 [DEBUG] (6) CacheCons2: - Waiting for input on channel start_C
+13:58:11 [DEBUG] (4) CacheCons2: - Waiting for input on channel start_CacheConsMod
+13:58:11 [DEBUG] (5) CacheCons2: - Waiting for input on channel start_S
