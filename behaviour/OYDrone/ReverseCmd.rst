@@ -1,30 +1,88 @@
 
 interface CommandIn {
 	event MoveIn: vector(real,6)
-	event ResetCommandOut: int
 }
 
 interface CommandOut {
 	MoveOut( move: vector(real,6)  )
-	PublishCommands(vec: Seq(vector(real,6)))
-	Publish_t(t:int)
+	
+	
 }
 interface SensorIn {
 	event opticalFlow: real
+	event RGBD: vector(real, 4)
+	event RGBD2: vector(real, 4)
+}
+
+interface OA{
+	event ResetCommandOut: int
 	event obstacle
 	event landing 
+	event StartLocalisation
+}
+
+interface LM{
+	event PoseEstimate: vector(real,6)
+}
+
+interface RCmd{
+	event Publish_t:int
+	event PublishCommands: Seq(vector(real,6))
 }
 controller ReverseCmdC {
 	uses CommandIn uses SensorIn requires CommandOut sref stm_ref0 = ReverseCmdS
-	
 	connection ReverseCmdC on MoveIn to stm_ref0 on MoveIn
-
 	cycleDef cycle == 1
-connection ReverseCmdC on opticalFlow to stm_ref0 on opticalFlow
-connection ReverseCmdC on ResetCommandOut to stm_ref0 on ResetCommandOut
-	connection ReverseCmdC on obstacle to stm_ref0 on obstacle
-	connection ReverseCmdC on landing to stm_ref0 on landing
+	connection ReverseCmdC on opticalFlow to stm_ref0 on opticalFlow
+
+sref stm_ref1 = ObstacleAvoidance
+	sref stm_ref2 = LocalisationAndMapping
+connection stm_ref1 on landing to stm_ref0 on landing
+	connection stm_ref1 on ResetCommandOut to stm_ref0 on ResetCommandOut
+	connection stm_ref1 on obstacle to stm_ref0 on obstacle
+	connection stm_ref2 on PoseEstimate to stm_ref1 on PoseEstimate
+
+	connection ReverseCmdC on RGBD to stm_ref1 on RGBD
+	connection ReverseCmdC on RGBD2 to stm_ref2 on RGBD2
+connection stm_ref1 on Publish_t to stm_ref0 on Publish_t
+	connection stm_ref1 on PublishCommands to stm_ref0 on PublishCommands
+connection stm_ref1 on StartLocalisation to stm_ref2 on StartLocalisation
 }
+
+stm LocalisationAndMapping {
+	input context {uses SensorIn uses OA}
+	output context {uses LM }
+	cycleDef cycle == 1
+	state Mapping {
+	}
+	initial i0
+	state Localisation {
+	}
+	transition t0 {
+		from i0
+		to Mapping
+	}
+transition t1 {
+		from Mapping
+		to Localisation		
+		exec
+		condition $StartLocalisation
+	}
+}
+
+stm ObstacleAvoidance {
+	input context {uses SensorIn uses RCmd uses LM}
+	output context {uses OA }
+	cycleDef cycle == 1
+	initial i0
+	state s0 {
+	}
+	transition t0 {
+		from i0
+		to s0
+	}
+}
+
 
 stm ReverseCmdS {
 	clock C
@@ -40,9 +98,10 @@ stm ReverseCmdS {
 	const stop : vector(real,6) = (|0.0, 0.0, 0.0, 0.0, 0.0, 0.0|)
 	const rotate: vector(real, 6) = (|0.0,0.0,0.0,0.0,0.0,1.0|)
 	const land: vector(real, 6) = (|0.0,0.0,-0.2,0.0,0.0,0.0|)
+	var tmax : int = 0
 
-	input context { uses CommandIn uses SensorIn}
-	output context {requires CommandOut}
+	input context { uses CommandIn uses SensorIn uses OA}
+	output context {requires CommandOut uses RCmd}
 	cycleDef cycle == 1
 initial i0
 	state SignalReceived {
@@ -60,8 +119,6 @@ initial i0
 	state Rotate {
 	}
 	state ObstacleAvoidance {
-	state LocalReplanner {
-		}
 	}
 	state WaitForSignal {
 	}
@@ -98,13 +155,13 @@ transition t0 {
 		to Rotate
 		exec
 		condition since ( T ) >= timeout
-		action CommandOut::MoveOut(stop); #T
+		action CommandOut::MoveOut(stop); #T; tmax = i
 	}
 	transition t3 {
 		from ReturnHome
 		to Landing
 		exec
-		condition t <= 0 /\ $opticalFlow?distanceToGround /\ not $obstacle
+		condition t <= tmax /\ $opticalFlow?distanceToGround /\ not $obstacle
 		action CommandOut::MoveOut(land)
 		
 	}
@@ -139,13 +196,14 @@ transition t6 {
 		to ObstacleAvoidance
 		exec
 		condition $obstacle
-		action CommandOut::MoveOut(stop); CommandOut::Publish_t(t)
+		action CommandOut::MoveOut(stop); $Publish_t!t
 	}
 	transition t8 {
 		from ObstacleAvoidance
 		to ReturnHome
 		exec
-		condition $ResetCommandOut?new_t /\ not $obstacle 
+		condition  
+		$ ResetCommandOut ? new_t
 		action t = new_t
 	}
 	transition t10 {
@@ -170,7 +228,7 @@ transition t13 {
 		from ObstacleAvoidance
 		to ObstacleAvoidance
 		exec
-		condition $obstacle
+		condition not $ ResetCommandOut
 	}
 transition t14 {
 		from ObstacleAvoidance
@@ -182,7 +240,7 @@ transition t14 {
 transition t15 {
 		from ReverseCommands
 		to ReturnHome
-		action CommandOut::PublishCommands(commands); t = 0; CommandOut::MoveOut(new_commands[t])
+		action $PublishCommands!commands; t = 0; CommandOut::MoveOut(new_commands[t])
 	}
 transition t16 {
 		from ReverseCommands
@@ -191,17 +249,19 @@ transition t16 {
 	}
 }
 
+
+
 module ReverseCmd {
 	robotic platform px4vision {
-		uses CommandIn uses SensorIn provides CommandOut }
+		 uses SensorIn uses CommandIn provides CommandOut }
 
 	cref ctrl_ref0 = ReverseCmdC
 	cycleDef cycle == 1
 
 	connection px4vision on MoveIn to ctrl_ref0 on MoveIn ( _async )
 connection px4vision on opticalFlow to ctrl_ref0 on opticalFlow ( _async )
-	connection px4vision on ResetCommandOut to ctrl_ref0 on ResetCommandOut ( _async )
-	connection px4vision on obstacle to ctrl_ref0 on obstacle ( _async )
-	connection px4vision on landing to ctrl_ref0 on landing ( _async )
+
+	connection px4vision on RGBD to ctrl_ref0 on RGBD ( _async )
+	connection px4vision on RGBD2 to ctrl_ref0 on RGBD2 ( _async )
 }
 
